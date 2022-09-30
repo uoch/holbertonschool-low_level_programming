@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-/* welcom to betty */
+/**
+main - welcom to betty */
 int main(void)
 /* welcom to betty */
 {
