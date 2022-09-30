@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
-main - welcom to betty */
+* main - welcom to betty
+* Return: 0 On success
+*/
 int main(void)
 /* welcom to betty */
 {
