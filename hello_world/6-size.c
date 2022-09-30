@@ -1,4 +1,8 @@
 #include<stdio.h>
+/**
+* main - welcom to betty
+* Return: 0 On success
+*/
 int main(void)
 {
 int intType;
