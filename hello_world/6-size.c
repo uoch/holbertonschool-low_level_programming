@@ -3,13 +3,15 @@ int main(void)
 {
 int intType;
 float floatType;
-double doubleType;
 char charType;
+long int x;
+long long int y;
 /* sizeof evaluates the size of a variable*/
-printf("Size of int: %zu bytes\n", sizeof(intType));
-printf("Size of float: %zu bytes\n", sizeof(floatType));
-printf("Size of double: %zu bytes\n", sizeof(doubleType));
-printf("Size of char: %zu byte\n", sizeof(charType));
+printf("Size a char: %zu byte\n", sizeof(charType));
+printf("Size a int: %zu bytes\n", sizeof(intType));
+printf("Size a long int: %zu bytes\n", sizeof(x));
+printf("Size a long long int: %zu bytes\n", sizeof(x));
+printf("Size a float: %zu bytes\n", sizeof(floatType));
 return (0);
 }
 
