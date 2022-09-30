@@ -4,7 +4,7 @@
 int main() {
  
   // initializing strings
-  char str1[] = "Programming is like building a multilingual puzzle;
+  char str1[] = "Programming is like building a multilingual puzzle";
 
   // writing to stdout
   puts(str1);
