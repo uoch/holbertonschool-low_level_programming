@@ -1,8 +1,3 @@
-/**
- *hello
- *
- * Return: Always 0 (Success)
- */
 #include <stdio.h>
 #include <string.h>
 /* welcom to betty */
