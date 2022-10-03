@@ -6,6 +6,7 @@
 int main(void)
 {
 	int b = 90;
+	int i;
 for ( i = 65 ; i <= b ; i++ )
 {
 	putchar(i);
