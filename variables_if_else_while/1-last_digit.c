@@ -19,4 +19,3 @@ int main(void)
 	if (LastNum < 6 && LastNum != 0)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, LastNum);
 	return (0);
-}
