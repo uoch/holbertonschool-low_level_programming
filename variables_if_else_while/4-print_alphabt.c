@@ -6,8 +6,9 @@
 int main(void)
 {
         int i = 97;
-while ( i <= 122 || (i != 113 && i != 101))
+while ( i <= 122 )
 {   
+        if (i != 113 && i != 101)
         putchar(i);
     i++;
 }
