@@ -5,12 +5,14 @@
  */
 int main(void)
 {
-	int i = 65;
-while ( i <= 122 )
+	int b = 90;
+for ( i = 65 ; i <= b ; i++ )
 {
 	putchar(i);
-    i++;
+    putchar(i + 32);
+
 }
+
 	putchar('\n');
 return (0);
 }
