@@ -12,7 +12,7 @@ for ( i = 65 ; i <= b ; i++ )
 {
 	putchar(i);
 }
-for ( i = b ; i <= c ; i++ )
+for ( i = 97 ; i <= c ; i++ )
 {
 	putchar(i);
 }
