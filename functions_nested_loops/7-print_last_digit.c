@@ -4,10 +4,16 @@
  *
  * Return: 0
  */
+int _abs(int);
 int print_last_digit(int n)
 {
      int  mod ;
 
      mod = n % 10 ;
+     if (mod<0)
+     {
+        mod = _abs(mod)
+     }
+     _putchar(pld + '0');
      return (mod);
 }
