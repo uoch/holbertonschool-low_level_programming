@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_sign - let us know if a given value is less or great than 0.
- * @n: value given.
+ * print_sign - Sign of number
+ * @n: input is intger.
  *
  * Return: 0
  */
