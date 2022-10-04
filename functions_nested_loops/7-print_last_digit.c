@@ -12,7 +12,7 @@ int print_last_digit(int n)
      mod = n % 10 ;
      if (mod<0)
      {
-        mod = _abs(mod)
+        mod = _abs(mod);
      }
      _putchar(pld + '0');
      return (mod);
