@@ -8,6 +8,6 @@ int print_last_digit(int n)
 {
      int  mod ;
 
-     mod = n % 10 ;
+     mod = n % 100 ;
      return (mod);
 }
