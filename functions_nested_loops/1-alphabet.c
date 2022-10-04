@@ -4,8 +4,6 @@
  @c: The character to print
  * Return: 0
  */
- int _putchar(char c);
-
 void print_alphabet(void)
 {
         int i = 97;
