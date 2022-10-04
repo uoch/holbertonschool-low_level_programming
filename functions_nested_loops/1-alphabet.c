@@ -1,4 +1,4 @@
-ls#include <stdio.h>
+#include <main.h>
 /**
  * main - Entry point
  @c: The character to print
