@@ -6,7 +6,7 @@
  */
 void print_alphabet_x10(void)
 {
-    int j
+    int j;
     for (j=0; i<=9; j++)
         {
             int i = 97;
