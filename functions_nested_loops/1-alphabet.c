@@ -6,7 +6,7 @@
  */
  int _putchar(char c);
 
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
         int i = 97;
 while (i <= 122)
