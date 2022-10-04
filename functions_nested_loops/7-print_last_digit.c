@@ -14,6 +14,6 @@ int print_last_digit(int n)
      {
         mod = _abs(mod);
      }
-     _putchar(pld + '0');
+     _putchar(mod + '0');
      return (mod);
 }
