@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
- @ alpha : game
- * Return: 0
+ * print_alphabet - print the alphabet complete 
  */
 void print_alphabet(void)
 {
