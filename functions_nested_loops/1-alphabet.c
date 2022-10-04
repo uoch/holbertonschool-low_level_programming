@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
- @c: The character to print
+ @ 10 : game
  * Return: 0
  */
 void print_alphabet(void)
