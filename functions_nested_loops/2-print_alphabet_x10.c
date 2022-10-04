@@ -1,21 +1,18 @@
 #include "main.h"
 /**
- * main - Entry point
- @ alpha : game
- * Return: 0
+ * print_alphabet_x10 - print the alphabet complete 10 times.
  */
-void print_alphabet_x10 (void)
-{
-    int j =0;
-    int i = 97;
 
-    for (j=0; i<=9; j++)
-        {
-            for (i; i<=122; i++)
-                {
-                    _putchar(i);
-                    i++;
-                }
-        }
-    _putchar(10);
+void print_alphabet_x10(void)
+{
+	int j, i;
+
+	for (i = 0; i <= 9; i++)
+	{
+	for (j = 97; j <= 122; j++)
+	{
+		_putchar(j);
+	}
+	_putchar(10);
+	}
 }
