@@ -15,5 +15,4 @@ while (i <= 122)
         i++;
 }
         _putchar(10);
-return (0);
 }
