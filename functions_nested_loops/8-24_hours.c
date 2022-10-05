@@ -1,24 +1,25 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * jack_bauer - function that prints every minute of the day, 24 hour clock
+ * h = hour, m = minutes
+ * / 10 allows second digit to rotate
+ * for loop breaks before passing 24:00
+ * Return: 24 hour clock line by line
  */
-void jack_bauer(void);
+void jack_bauer(void)
 {
-	 int i ,j ;
-	 i = 0 ;
-	 j = 0 ;
-	 for (i < 24 ; i++;)
-	 {
-	 	for (j < 60 ; j++;)
-		{
-		if ((j < 10) ||(i<10));
-			_putchar('0'i':''0'j);
-		if else
-		_putchar(i':'j);
-		_putchar(10)
-		}
-	 }
-}
+	int h, m;
 
+	for (h = ; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
+	}
+}
