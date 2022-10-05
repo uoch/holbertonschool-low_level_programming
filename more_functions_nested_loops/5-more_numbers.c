@@ -7,7 +7,7 @@
  */
 
 
-void nmubb014(void);
+void nmubb014();
 void more_numbers(void)
 {
 	char c;
