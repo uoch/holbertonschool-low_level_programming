@@ -4,20 +4,21 @@
  *
  * Return: Always 0.
  */
-void jack_bauer(void)
- {
- 	 int i ,j ;
+void jack_bauer(void);
+{
+	 int i ,j ;
 	 i = 0 ;
-	 j = 0;
-	 for (i < 24 ; i++)
+	 j = 0 ;
+	 for (i < 24 ; i++;)
 	 {
-	 	for (j < 60 ; j++)
+	 	for (j < 60 ; j++;)
 		{
-		if (j < 10 || i<10)
+		if ((j < 10) ||(i<10));
 			_putchar('0'i':''0'j);
-		else
+		if else
 		_putchar(i':'j);
-		}		
+		_putchar(10)
+		}
 	 }
- }
+}
 
