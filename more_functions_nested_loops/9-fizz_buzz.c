@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - entry point
@@ -16,16 +17,16 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 15 == 0)
-			_putchar('FizzBuzz');
+			printf("FizzBuzz");
 		else if (i % 3 == 0)
-			_putchar('Fizz');
+			printf("Fizz");
 		else if (i % 5 == 0)
-			printf('Buzz');
+			printf("Buzz");
 		else
-			_putchar(i);
+			printf("%i", i);
 		if (i < 100)
-			_putchar(' ');
+			printf(" ");
 	}
-	_putchar(10);
+	printf("\n");
 	return (0);
 }
