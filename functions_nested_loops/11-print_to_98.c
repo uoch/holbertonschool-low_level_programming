@@ -9,6 +9,8 @@
 
 void print_to_98(int n)
 {
+	int d , e;
+
 	while (n != 98)
 	{
 		d = n / 10;
