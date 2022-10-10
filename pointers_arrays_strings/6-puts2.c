@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string to find length of
+ * puts2 - prints every other character of a  string to stdout
+ * @str: string to print
  *
- * Return: length of s
+ * Return: void
  */
 void puts2(char *str)
 {
-    int i = 0;
+	int i = 0;
 
 	while (*(str + i))
 	{
