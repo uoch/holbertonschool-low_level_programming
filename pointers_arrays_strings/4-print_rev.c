@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in stdout
+ * print_rev - prints a string in stdout in reverse
  * @s: string to print
  *
  * Return: void
  */
 void print_rev(char *s)
 {
-    int i = 0;
-    int j = 0;
-    while (s[i] != '\0')
-        i++;
-    while (i != j)
-    {
-        _putchar(*(s + j));
-		j++;
-        j = i-1;
-    }
-    
+	int i = 0;
+
+	while (*(s + i))
+		i++;
+	i = i - 1;
+	while (i >= 0)
+	{
+		_putchar(*(s + i));
+		i--;
+	}
+	_putchar('\n');
 }
