@@ -13,15 +13,14 @@ void reverse_array(int *a, int n)
 	int i, j;
 
 	i = 0;
-	n = n - 1;
 	while (*(a + i))
 		i++;
-	while (i >= 0)
+	while (i > 0)
 	{
-		j = *(a + n);
-		*(a + n) = *(a + i);
-		*(a + i) = j;
+		n = *(a + i);
+		*(a + i) = *(a + j);
+		*(a + j) = n;
 		i--;
-		n++;
+		j++;
 	}
 }
