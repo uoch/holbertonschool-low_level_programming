@@ -12,12 +12,12 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int i = 0;
 	unsigned int j;
 
-	while (*(accept + i))
+	while (*(s + i))
 	{
 		for (j = 0; j <= i; j++)
 
 			if (*(s + j) == *(accept + j))
-				break;
+				return(i)
 		i += i;
 
 		i++;
