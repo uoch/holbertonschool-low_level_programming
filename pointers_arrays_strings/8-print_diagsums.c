@@ -3,7 +3,7 @@
 #include "main.h"
 void print_diagsums(int *a, int size)
 {
-	int i, j, n, k, g , r;
+	int i, j, n, k, g ;
 
 	for (i = 0; i < size; i++)
 	{
