@@ -15,5 +15,5 @@ void print_diagsums(int *a, int size)
 			g += *(a + i) + n;
 		}
 	}
-	printf("%d\n", k, g);
+	printf("%d ,%d\n", k, g);
 }
