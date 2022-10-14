@@ -3,7 +3,7 @@
 #include "main.h"
 void print_diagsums(int *a, int size)
 {
-	int i, j, n, k, g;
+	int i, j, n, k, g , r;
 
 	for (i = 0; i < size; i++)
 	{
@@ -12,7 +12,7 @@ void print_diagsums(int *a, int size)
 			if (i == j)
 				k += *(a + i) + j;
 			n = size - j;
-			g += *(a + i) + n;
+			g += *(a + n) + j;
 		}
 	}
 	printf("%d ,%d\n", k, g);
