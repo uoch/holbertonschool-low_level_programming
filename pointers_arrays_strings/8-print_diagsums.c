@@ -10,9 +10,9 @@ void print_diagsums(int *a, int size)
 		for (j = 0; j < size; j++)
 		{
 			if (i == j)
-				k = k + (*(*(a + i) + j));
+				k += (*(*(a + i) + j));
 			n = size - j;
-			g = g + *(*(a + i) + n);
+			g +=  *(*(a + i) + n);
 		}
 		printf("%d\n", k);
 		printf("%d\n", g);
