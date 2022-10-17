@@ -16,6 +16,6 @@ int _sqrt_recursion(int n)
 		return (0);
 
     if (n == _pow_recursion( x+1 , 2))
-    return (n);
+    return (n _pow_recursion( x+1 , 2);
 }
     
