@@ -1,3 +1,5 @@
+#include "dog.h"
+
 char *_strcopy(char *dest, char *src)
 {
 	int i = 0;
