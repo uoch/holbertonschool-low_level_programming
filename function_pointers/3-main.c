@@ -9,7 +9,7 @@
  *
  * Return: Always 0.
  */
-int main(char *argv[])
+int main(int n ,char *argv[])
 {
     int num1, num2;
     char *op;
@@ -17,6 +17,7 @@ int main(char *argv[])
     num1 = atoi(argv[1]);
     op = argv[2];
     num2 = atoi(argv[3]);
+	n = 0;
 
     if (get_op_func(op) == NULL || op[1] != '\0')
     {
