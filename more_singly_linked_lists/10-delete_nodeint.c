@@ -1,20 +1,18 @@
 #include "lists.h"
+
 /**
- * insert_nodeint_at_index - Inserts a new node to a listint_t
- *                           list at a given position.
+ * delete_nodeint_at_index - Deletes the node at a given
+ *                           index of a listint_t list.
  * @head: A pointer to the address of the
  *        head of the listint_t list.
- * @index: The index of the listint_t list where the new
- *       node should be added - indices start at 0.
- * @n: The integer for the new node to contain.
+ * @index: The index of the node to be deleted - indices start at 0.
  *
- * Return: If the function fails - NULL.
- *         Otherwise - the address of the new node.
+ * Return: On success - 1.
+ *         On failure - -1.
  */
-
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *new, *copy = *head;
+	listint_t *tmp, *copy = *head;
 	unsigned int node;
 
 	if (copy == NULL)
@@ -29,13 +27,14 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	for (node = 0; node < (index - 1); node++)
 	{
-		if (head == NULL || copy->next == NULL)
+		if (copy->next == NULL)
 			return (-1);
 
 		copy = copy->next;
 	}
-	new = copy->next;
-	new->next = copy->next;
-	free(new);
+
+	tmp = copy->next;
+	copy->next = tmp->next;
+	free(tmp);
 	return (1);
 }
