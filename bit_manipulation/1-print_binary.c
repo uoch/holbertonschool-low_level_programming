@@ -10,5 +10,5 @@ void print_binary(int n)
 	if (n > 1)
 		print_binary(n >> 1);
 
-	_putchar(n);
+	_putchar(n + '0');
 }
