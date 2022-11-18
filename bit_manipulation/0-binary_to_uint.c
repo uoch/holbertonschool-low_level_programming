@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (len = 0; b[len]; len++)
 	{
-		c = (b[len] - '0')
+		c = (b[len] - '0');
 		rem = c % 10;
 		num += rem * mult;
 		c /= 10;
