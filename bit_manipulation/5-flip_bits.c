@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * countSetBits - Function that count set bits
+ * countBits - Function that count set bits
  * @n: bits to set
  * Return: count
  */
 
 unsigned long int countBits(unsigned long int n)
 {
-    int count = 0;
+	int count = 0;
 
-    while (n > 0)
-    {
-        count++;
-        n &= (n - 1);
-    }
-    return (count);
+	while (n > 0)
+	{
+		count++;
+		n &= (n - 1);
+	}
+	return (count);
 }
 
 /**
@@ -28,5 +28,5 @@ unsigned long int countBits(unsigned long int n)
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 
-    return (countBits(n ^ m));
+	return (countBits(n ^ m));
 }
