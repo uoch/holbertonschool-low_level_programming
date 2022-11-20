@@ -2,30 +2,30 @@
 /**
  * print_times_table - prints an n times table.
  * @n: integer input
- * 
+ *
  * Return: void
  */
 void print_times_table(int n)
 {
-    int a, b, c;
+	int a, b, c;
 
-    for (a = 0; a <= n; a++)
-    {
-        _putchar('0');
+	for (a = 0; a <= n; a++)
+	{
+		_putchar('0');
 
-        for (b = 1; b <= n; b++)
-        {
-            _putchar(44);
-            _putchar(32);
+		for (b = 1; b <= n; b++)
+		{
+			_putchar(44);
+			_putchar(32);
 
-            c = a * b;
+			c = a * b;
 
-            if (c <= n)
-                _putchar(32);
-            else
-                _putchar((c / 10) + '0');
-            _putchar((c % 10) + '0');
-        }
-        _putchar(10);
-    }
+			if (c <= n)
+				_putchar(32);
+			else
+				_putchar((c / 10) + '0');
+			_putchar((c % 10) + '0');
+		}
+		_putchar(10);
+	}
 }
