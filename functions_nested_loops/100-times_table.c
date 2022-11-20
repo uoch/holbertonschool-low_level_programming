@@ -28,7 +28,8 @@ void print_times_table(int n)
 	{
 		for (b = 1; b <= n; b++)
 		{
-
+			_putchar(44);
+			_putchar(32);
 			c = a * b;
 			print_d(c);
 		}
