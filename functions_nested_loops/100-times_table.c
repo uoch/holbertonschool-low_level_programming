@@ -28,11 +28,10 @@ void print_times_table(int n)
 			else
 				_putchar((c / 10) + '0');
 			_putchar((c % 10) + '0');
-			if (c <= 99)
+			if (10 < c <= 99)
 			{
 				_putchar(32);
 			}
-			
 		}
 		_putchar(10);
 	}
