@@ -26,7 +26,9 @@ void print_times_table(int n)
 				_putchar(32);
 			else if (c <= 99)
 				_putchar((c / 10) + '0');
-			else if (c <= 999)
+			if (c <= 99)
+				_putchar(32);
+			else 
 			{
 				_putchar((c / 100) + '0');
 				_putchar((c % 100) + '0');
