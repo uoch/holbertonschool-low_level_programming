@@ -26,11 +26,11 @@ void print_times_table(int n)
 				_putchar(32);
 			else if (c <= 99)
 				_putchar((c / 10) + '0');
-			else if (100 < c)
+			else
 			{
 				_putchar((c / 100) + '0');
-				_putchar((c % 100) + '0');
 			}
+			_putchar((c % 100) + '0');
 			_putchar((c % 10) + '0');
 		}
 		_putchar(10);
