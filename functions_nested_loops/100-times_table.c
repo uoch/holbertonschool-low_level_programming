@@ -21,11 +21,13 @@ void print_times_table(int n)
 
 			c = a * b;
 
-			if (c <= 9)
-				_putchar(32);
-			else
+			if (c > 9)
+			{
 				_putchar((c / 10) + '0');
-			_putchar((c % 10) + '0');
+				_putchar((c % 10) + '0');
+			}
+			if (c <= n)
+				_putchar(32);
 		}
 		_putchar(10);
 	}
