@@ -9,7 +9,7 @@
 void print_times_table(int n)
 {
 	int a, b, c;
-	int b = 1;
+	int k = 1;
 
 	for (a = 0; a <= n; a++)
 	{
@@ -18,14 +18,14 @@ void print_times_table(int n)
 			_putchar(44);
 			_putchar(32);
 			c = a * b;
-			while (c / b >= 10)
-				b *= 10;
-			while (b > 0)
+			while (c / k >= 10)
+				k *= 10;
+			while (k > 0)
 			{
-				putchar('0' + (c / b));
+				putchar('0' + (c / k));
 
-				c %= b;
-				b /= 10;
+				c %= k;
+				k /= 10;
 			}
 			_putchar(10);
 		}
