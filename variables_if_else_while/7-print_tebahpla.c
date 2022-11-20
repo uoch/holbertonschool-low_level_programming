@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	int i = 122;
+    int i = 122;
     while (i >= 97)
     {
-	    putchar(i);
-	    i--;
+        putchar(i);
+        i--;
     }
-	putchar('\n');
+    putchar('\n');
     return (0);
 }
