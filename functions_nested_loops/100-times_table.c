@@ -5,24 +5,11 @@
  *
  * Return: void
  */
-void print_d(int i)
-{
-	int b = 1;
-
-	while (i / b >= 10)
-		b *= 10;
-	while (b > 0)
-	{
-		putchar('0' + (i / b));
-
-		i %= b;
-		b /= 10;
-	}
-}
 
 void print_times_table(int n)
 {
 	int a, b, c;
+	int b = 1;
 
 	for (a = 0; a <= n; a++)
 	{
@@ -31,8 +18,16 @@ void print_times_table(int n)
 			_putchar(44);
 			_putchar(32);
 			c = a * b;
-			print_d(c);
+			while (c / b >= 10)
+				b *= 10;
+			while (b > 0)
+			{
+				putchar('0' + (c / b));
+
+				c %= b;
+				b /= 10;
+			}
+			_putchar(10);
 		}
-		_putchar(10);
 	}
 }
