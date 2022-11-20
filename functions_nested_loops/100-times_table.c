@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- * times_table - prints an n times table.
- *
+ * print_times_table - prints an n times table.
+ * @n: integer input
+ * 
+ * Return: void
  */
 void print_times_table(int n)
 {
@@ -18,7 +20,7 @@ void print_times_table(int n)
 
             c = a * b;
 
-            if (c <= 9)
+            if (c <= n)
                 _putchar(32);
             else
                 _putchar((c / 10) + '0');
