@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
  * read_textfile - Reads a text file and prints it to POSIX stdout.
  * @filename: A pointer to the name of the file.
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	o = open(filename, O_RDONLY);
 	r = read(o, buffer, letters);
-	w = write(2   , buffer, r);
+	w = write(STDOUT_FILENO, buffer, r);
 
 	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
