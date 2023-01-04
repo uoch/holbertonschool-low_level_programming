@@ -1,4 +1,5 @@
 #include "search_algos.h"
+
 /**
  * jump_search - searches for a value in a sorted array of integers
  * using the Jump Search algorithm
@@ -43,4 +44,16 @@ int jump_search(int *array, size_t size, int value)
 		return prev;
 
 	return -1;
+}
+
+/**
+ * min - returns the minimum of two integers
+ * @a: first integer to compare
+ * @b: second integer to compare
+ *
+ * Return: the minimum of a and b
+ */
+int min(int a, int b)
+{
+    return (a < b) ? a : b;
 }
